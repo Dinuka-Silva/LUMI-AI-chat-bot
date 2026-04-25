@@ -160,5 +160,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <div align="center">
   <br />
-  Made with ❤️ by an AI Enthusiast
+  
 </div>
