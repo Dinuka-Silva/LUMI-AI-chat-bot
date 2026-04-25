@@ -148,17 +148,3 @@ Lumi Pro comes with plug-and-play support for **Ollama**, allowing you to run AI
 - **AI Integration:** Google Generative AI SDK, Custom Ollama Hooks
 - **Content Rendering:** React Markdown, Remark GFM
 
----
-
-## 🤝 Contributing
-
-Contributions are always welcome! Feel free to open an issue or submit a Pull Request if you'd like to improve the project.
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<div align="center">
-  <br />
-  
-</div>
