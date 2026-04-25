@@ -1,91 +1,164 @@
-# Lumi Pro - Advanced AI Chatbot Platform
+<div align="center">
+  
+# 🌟 Lumi Pro
 
-Lumi Pro is a comprehensive, advanced AI chatbot platform featuring both a sleek web application and a cross-platform mobile application. It seamlessly integrates powerful cloud models (Google Gemini) and privacy-first local models (via Ollama) into a unified, feature-rich interface.
+**The Ultimate Next-Generation AI Assistant Platform**
 
-## 🌟 Key Features
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black&style=for-the-badge)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white&style=for-the-badge)](https://vitejs.dev/)
+[![React Native](https://img.shields.io/badge/React_Native-0.81-61DAFB?logo=react&logoColor=black&style=for-the-badge)](https://reactnative.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-*   **Multi-Model Support:** Effortlessly switch between Google Gemini models (Gemini 2.0 Flash, Gemini 1.5 Pro, Gemini 1.5 Flash) and local models like DeepSeek (via Ollama).
-*   **Rich Media Interactions:** Support for text, voice (Speech-to-Text & Text-to-Speech), image analysis, and file attachments.
-*   **Advanced AI Capabilities:** Features like "Chain of Thought" visibility, Agent Mode, Deep Research simulations, and "Explain Like I'm 5" (ELI5) Canvas.
-*   **Customization:** Tailor the AI's personality, tone, language, and custom instructions (Custom GPT mode). Adjust creativity levels and response modes (Quick, Explain, Exam).
-*   **Developer Friendly:** Beautiful code blocks with syntax highlighting, one-click copy, and download functionality.
-*   **Study Tools:** Built-in Notes Generator, Quiz Generator, and Flashcards creator.
-*   **Persistent Memory:** Local storage for conversation history, goals tracking, and learned user preferences.
-*   **Cross-Platform UI:** Premium UI built with Tailwind CSS and Framer Motion, featuring seamless Light and Dark mode transitions.
+*A fully-featured, cross-platform AI chat application supporting cutting-edge cloud models and privacy-first local models.*
 
-## 🏗️ Project Structure
+[Explore Features](#-key-features) • [Installation](#-quick-start) • [Tech Stack](#️-tech-stack) • [Mobile App](#-mobile-app)
 
-The repository is organized into two main parts:
+</div>
 
-### 1. Web Application (`/`)
-Built with Vite, React 19, TypeScript, and Tailwind CSS.
-*   `src/`: Contains the React components, styles, and API logic (Gemini and Ollama integrations).
-*   `index.html`: Main entry point for the Vite app.
+---
 
-### 2. Mobile Application (`/mobile`)
-Built with Expo, React Native, and Firebase.
-*   Features native integration for Firebase Authentication and Google Sign-in.
-*   Connects to local Ollama server and cloud Gemini APIs.
+## ✨ Overview
 
-## 🚀 Getting Started
+**Lumi Pro** redefines the AI chat experience. Whether you need the blazing fast intelligence of Google's **Gemini 2.0 Flash** or the privacy and localized control of **DeepSeek via Ollama**, Lumi Pro seamlessly bridges the gap. It provides a beautiful web interface and a powerful mobile application, all synchronized to empower your workflows.
 
-### Prerequisites
-*   Node.js (v18 or higher recommended)
-*   [Ollama](https://ollama.com/) installed locally (if you plan to use local models like DeepSeek)
-*   Google Gemini API Key (for cloud models)
+---
 
-### Setup the Web Application
+## 🚀 Key Features
 
-1.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🧠 Multi-Model Intelligence</h3>
+      Switch effortlessly between cloud giants (Gemini Pro/Flash) and local privacy-first models like DeepSeek. 
+    </td>
+    <td width="50%">
+      <h3>🎨 Premium UI/UX</h3>
+      Silky smooth animations with Framer Motion, dynamic glassmorphism, and instant Light/Dark mode toggling.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🎙️ Rich Media Native</h3>
+      Full support for Speech-to-Text dictation, Text-to-Speech read-alouds, image analysis, and file attachments.
+    </td>
+    <td width="50%">
+      <h3>🛠️ Developer & Study Tools</h3>
+      Syntax-highlighted code blocks with 1-click copy/download. Built-in generators for Notes, Quizzes, and Flashcards.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>⚙️ Deep Customization</h3>
+      Adjust AI creativity, set custom GPT instructions, and toggle response modes (Quick, Explain, Exam) on the fly.
+    </td>
+    <td width="50%">
+      <h3>📱 Cross-Platform</h3>
+      Use it at your desk via the Vite/React web app, or on the go with the Expo React Native mobile application.
+    </td>
+  </tr>
+</table>
 
-2.  **Environment Variables:**
-    Create a `.env` file in the root directory based on `.env.example`:
-    ```env
-    VITE_GEMINI_API_KEY=your_gemini_api_key_here
-    ```
+---
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
-    The web app will be available at `http://localhost:5173`.
+## 🏗️ Architecture
 
-### Setup the Mobile Application
-
-1.  **Navigate to the mobile directory:**
-    ```bash
-    cd mobile
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-
-3.  **Start the Expo server:**
-    ```bash
-    npm start
-    ```
-    Use the Expo Go app on your physical device or run it on an iOS Simulator / Android Emulator.
-
-## 🧠 Local Models via Ollama
-
-To use local privacy-first models, ensure Ollama is running on your machine.
-For example, to run DeepSeek:
-```bash
-ollama run deepseek-r1:1.5b
+```text
+├── 💻 Web App (Root)
+│   ├── src/          # React 19 components, Gemini & Ollama integration
+│   ├── public/       # Static assets
+│   └── index.html    # Web entry point
+│
+└── 📱 Mobile App (/mobile)
+    ├── App.tsx       # React Native entry point
+    ├── lib/          # Mobile specific auth (Firebase) and AI hooks
+    └── assets/       # Mobile assets and icons
 ```
-The application will automatically detect and communicate with the local server (defaulting to `http://localhost:11434`). Note: For the mobile app to connect to a local Ollama server on a physical device, you may need to configure your network and `OLLAMA_HOST` variable accordingly.
+
+---
+
+## ⚡ Quick Start
+
+### 1️⃣ Setting up the Web Application
+
+> **Prerequisites:** Node.js (v18+) and an active Gemini API Key.
+
+Clone the repository and install the web dependencies:
+
+```bash
+git clone https://github.com/yourusername/ai-chat-bot.git
+cd ai-chat-bot
+npm install
+```
+
+Configure your environment variables:
+```bash
+cp .env.example .env
+# Open .env and add your VITE_GEMINI_API_KEY
+```
+
+Fire up the development server:
+```bash
+npm run dev
+```
+> 🌐 The application will be running at `http://localhost:5173`
+
+---
+
+### 2️⃣ Setting up the Mobile Application
+
+> **Prerequisites:** Expo CLI installed.
+
+Navigate to the mobile directory and get started:
+
+```bash
+cd mobile
+npm install
+npm start
+```
+> 📱 Scan the QR code with the **Expo Go** app on your phone, or press `i` to launch an iOS simulator.
+
+---
+
+## 🔒 Local Models (Privacy First)
+
+Lumi Pro comes with plug-and-play support for **Ollama**, allowing you to run AI models entirely offline.
+
+1. Download and install [Ollama](https://ollama.com/).
+2. Pull and run your preferred model, e.g., DeepSeek:
+   ```bash
+   ollama run deepseek-r1:1.5b
+   ```
+3. Open Lumi Pro and select "Local DeepSeek" from the model dropdown. *Your data never leaves your machine!*
+
+---
 
 ## 🛠️ Tech Stack
 
-*   **Frontend Web:** React 19, Vite, TypeScript, Tailwind CSS, Framer Motion, Lucide React, React Markdown.
-*   **Frontend Mobile:** React Native, Expo, Expo File System, React Native Firebase.
-*   **AI Integration:** `@google/generative-ai` SDK, Ollama REST API.
+<div align="center">
+  <br />
+  <img src="https://skillicons.dev/icons?i=react,ts,vite,tailwind,firebase,nodejs,github" alt="Tech Stack" />
+  <br />
+</div>
+
+- **Frontend Core:** React 19, TypeScript, Vite
+- **Styling & Motion:** Tailwind CSS v4, Framer Motion, Lucide Icons
+- **Mobile Environment:** React Native, Expo, Firebase Auth
+- **AI Integration:** Google Generative AI SDK, Custom Ollama Hooks
+- **Content Rendering:** React Markdown, Remark GFM
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome! Feel free to open an issue or submit a Pull Request if you'd like to improve the project.
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<div align="center">
+  <br />
+  Made with ❤️ by an AI Enthusiast
+</div>
